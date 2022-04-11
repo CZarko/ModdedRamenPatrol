@@ -52,6 +52,5 @@ class Menu extends Phaser.Scene {
             this.sound.play('sfx-select');
             this.scene.start('play');
         }
-        this.scene.start('play');
     }
 }
