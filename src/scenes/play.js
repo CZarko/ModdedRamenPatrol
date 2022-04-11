@@ -4,10 +4,10 @@ class Play extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('bamboo', '../assets/bamboo.png');
-        this.load.image('fishcake', '../assets/Fishcake.png');
-        this.load.image('ramen', '../assets/ramen.png');
-        this.load.spritesheet('magi-splosion', '../assets/magi-splosion.png', {frameWidth: 64, frameHeight: 64, startFrame: 0, endFrame: 9});
+        this.load.image('bamboo', './assets/bamboo.png');
+        this.load.image('fishcake', './assets/Fishcake.png');
+        this.load.image('ramen', './assets/ramen.png');
+        this.load.spritesheet('magi-splosion', './assets/magi-splosion.png', {frameWidth: 64, frameHeight: 64, startFrame: 0, endFrame: 9});
     }
     
     create() {
