@@ -4,9 +4,9 @@ class Menu extends Phaser.Scene {
     }
 
     preload() {
-        this.load.audio('sfx-select', '../assets/select.wav');
-        this.load.audio('sfx-splosion', '../assets/magi-splosion.wav');
-        this.load.audio('sfx-throw', '../assets/throw.wav');
+        this.load.audio('sfx-select', './assets/select.wav');
+        this.load.audio('sfx-splosion', './assets/magi-splosion.wav');
+        this.load.audio('sfx-throw', './assets/throw.wav');
     }
 
     create() {
