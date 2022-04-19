@@ -111,7 +111,7 @@ class Play extends Phaser.Scene {
         }
 
         // Return to Menu Button
-        if(this.gameOver && Phaser.Input.Keyboard.JustDown(keyLEFT)) {
+        if(this.gameOver && Phaser.Input.Keyboard.JustDown(p1LEFT)) {
             this.sound.play('sfx-select');
             this.scene.start("menu");
         }
@@ -182,7 +182,7 @@ class Play extends Phaser.Scene {
             }, null, this);
         } else {
             this.add.text(game.config.width/2, game.config.height/2, 'GAME OVER', this.textConfig).setOrigin(0.5,0);
-            this.add.text(game.config.width/2, game.config.height/2 + 64, 'Press (R) to Restart or ← Menu', this.textConfig).setOrigin(0.5,0);
+            this.add.text(game.config.width/2, game.config.height/2 + 64, 'Press (R) to Restart or (A) Menu', this.textConfig).setOrigin(0.5,0);
             this.gameOver = true;
         }
 
