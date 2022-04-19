@@ -1,19 +1,20 @@
-class Ramen extends Phaser.GameObjects.Sprite {
-    constructor(scene,x,y,texture) {
-        super(scene,x,y,texture);
+class Riceball extends Phaser.GameObjects.Sprite {
+    constructor(scene, x, y, texture) {
+        super(scene, x, y, texture);
         scene.add.existing(this);
         scene.anims.create({
-            key: 'ramen',
-            frames: this.anims.generateFrameNumbers('ramen', {start: 0, end: 3, first: 0}),
+            key: 'rice',
+            frames: this.anims.generateFrameNumbers('riceball', {start: 0, end: 3, first: 0}),
             frameRate: 5,
             repeat: -1
         });
 
-        this.movementSpeed = Math.floor(Math.random()*game.settings.enemySpeedMultiplier)+game.settings.enemySpeedBase;
+        this.movementSpeed = Math.floor(Math.random()*game.settings.enemySpeedMultiplier)+game.settings.enemySpeedBase*2;
         this.dir = Math.round(Math.random());
-        this.pointValue = 10;
 
-        this.anims.play('ramen');
+        this.pointValue = 20;
+
+        this.anims.play('rice');
     }
 
     update() {
@@ -33,6 +34,6 @@ class Ramen extends Phaser.GameObjects.Sprite {
             this.x = game.config.width + Math.floor(Math.random()*game.config.width);
         else
             this.x = -Math.floor(Math.random()*game.config.width);
-        this.movementSpeed = Math.floor(Math.random()*game.settings.enemySpeedMultiplier)+game.settings.enemySpeedBase;
+        this.movementSpeed = Math.floor(Math.random()*game.settings.enemySpeedMultiplier)+game.settings.enemySpeedBase*2;
     }
 }
