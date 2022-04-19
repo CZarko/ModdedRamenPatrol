@@ -1,3 +1,7 @@
+/* Caleb Zarko, Ramen Patrol Modded, 04/18/2022
+Project took ~10 hours, I didn't really keep track.
+I recieved no help at all.*/
+
 /** MODDING CHECKLIST
  * STARTING TIER
  *      Track High Score - O
