@@ -17,7 +17,7 @@ class Play extends Phaser.Scene {
     
     create() {
         // input connection
-        keyK = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.K);
+        keyF = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.F);
         keyH = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.H);
         keyR = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
         p1LEFT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
@@ -38,7 +38,7 @@ class Play extends Phaser.Scene {
 
         // game player(s) 
         this.players = [];
-        let fishcake = new Fishcake(this, game.config.width/2 - (100 * (game.settings.players-1)), game.config.height -(this.height/4 + borderUISize + borderPadding), 'fishcake', 'throwing-hand', p1LEFT, p1RIGHT, keyK).setOrigin(0.5,0.5);
+        let fishcake = new Fishcake(this, game.config.width/2 - (100 * (game.settings.players-1)), game.config.height -(this.height/4 + borderUISize + borderPadding), 'fishcake', 'throwing-hand', p1LEFT, p1RIGHT, keyF).setOrigin(0.5,0.5);
         fishcake.reset();
         this.players.push(fishcake);
         if(game.settings.players == 2) {
