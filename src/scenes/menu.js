@@ -34,7 +34,7 @@ class Menu extends Phaser.Scene {
         };
 
 
-        this.add.text(game.config.width/2,game.config.height/2 - borderUISize - borderPadding,"RAMEN PATROL",this.menuConfig).setOrigin(0.5,0.5);
+        this.add.text(game.config.width/2,game.config.height/2 - borderUISize - borderPadding,"ROMAN RAMEN PATROL",this.menuConfig).setOrigin(0.5,0.5);
         this.add.text(game.config.width/2,game.config.height/2,"A game by CZarko",this.menuConfig).setOrigin(0.5,0.5);
         this.add.text(game.config.width/2,game.config.height/2 + borderUISize + borderPadding,"Use (A)/(D) to move & (F) to fire",this.menuConfig).setOrigin(0.5,0.5);
         this.menuConfig.backgroundColor = '#f8accc';
