@@ -21,7 +21,7 @@ class Menu extends Phaser.Scene {
         this.keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
     
         this.menuConfig = {
-            fontFamily: 'Courier',
+            fontFamily: 'Times New Roman',
             fontSize: '28px',
             backgroundColor: '#996861',
             color: '#e4a478',
