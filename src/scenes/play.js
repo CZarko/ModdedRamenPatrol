@@ -181,7 +181,7 @@ class Play extends Phaser.Scene {
                 this.updateTimer();
             }, null, this);
         } else {
-            this.add.text(game.config.width/2, game.config.height/2, 'GAME OVER', this.textConfig).setOrigin(0.5,0);
+            this.add.text(game.config.width/2, game.config.height/2, 'ROMAN GAME OVER', this.textConfig).setOrigin(0.5,0);
             this.add.text(game.config.width/2, game.config.height/2 + 64, 'Press (R) to Restart or (A) Menu', this.textConfig).setOrigin(0.5,0);
             this.gameOver = true;
         }
